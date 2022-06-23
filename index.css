@@ -39,7 +39,7 @@ li {
   top: -3rem;
   position: absolute;
   height: 0.4rem;
-  background: linear-gradient(45deg, #e1eec3 0%, #f05053 100%);
+  background: linear-gradient(45deg, #e1eec3 0%, #ffff00 100%);
   filter: drop-shadow(0 0 6px #ec595c);
   transform-origin: center left;
   animation: falling ease-in-out infinite, advance ease-in-out infinite;
@@ -48,6 +48,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15%;
 }
 
 li:nth-child(1) {
@@ -99,4 +100,24 @@ li:nth-child(10) {
   left: 98%;
   animation-delay: 3s;
   animation-duration: 30s;
+}
+.staros {
+  filter: invert(96%) sepia(33%) saturate(3983%) hue-rotate(1deg)
+    brightness(104%) contrast(107%);
+}
+li img {
+  position: absolute;
+  right: -1rem;
+  width: 2rem;
+  animation: rotatos linear infinite;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+@keyframes rotatos {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 }
