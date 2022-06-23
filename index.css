@@ -38,8 +38,8 @@ body {
 li {
   top: -3rem;
   position: absolute;
-  height: 0.4rem;
-  background: linear-gradient(45deg, #e1eec3 0%, #f05053 100%);
+
+  background: linear-gradient(45deg, #e1eec3 0%, #ffff00 100%);
   filter: drop-shadow(0 0 6px #ec595c);
   transform-origin: center left;
   animation: falling ease-in-out infinite, advance ease-in-out infinite;
@@ -48,55 +48,86 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15%;
 }
 
 li:nth-child(1) {
   left: 56%;
+  height: 0.1rem;
   animation-delay: 0s;
   animation-duration: 3s;
 }
 li:nth-child(2) {
   left: 25%;
+  height: 0.2rem;
   animation-delay: 1s;
   animation-duration: 7s;
 }
 li:nth-child(3) {
   left: 30%;
+  height: 0.3rem;
   animation-delay: 1.3s;
   animation-duration: 4s;
 }
 li:nth-child(4) {
   left: 40%;
+  height: 0.4rem;
   animation-delay: 1.6s;
   animation-duration: 12s;
 }
 li:nth-child(5) {
   left: 45%;
+  height: 0.42rem;
   animation-delay: 1.8s;
   animation-duration: 20s;
 }
 li:nth-child(6) {
   left: 21%;
+  height: 0.49rem;
   animation-delay: 2s;
   animation-duration: 2s;
 }
 li:nth-child(7) {
   left: 85%;
+  height: 0.47rem;
   animation-delay: 2.3s;
   animation-duration: 5s;
 }
 li:nth-child(8) {
   left: 70%;
+  height: 0.43rem;
   animation-delay: 2.5s;
   animation-duration: 4s;
 }
 li:nth-child(9) {
   left: 90%;
+  height: 0.46rem;
   animation-delay: 2.8s;
   animation-duration: 25s;
 }
 li:nth-child(10) {
   left: 98%;
+  height: 0.48rem;
   animation-delay: 3s;
   animation-duration: 30s;
+}
+.staros {
+  filter: invert(96%) sepia(33%) saturate(3983%) hue-rotate(1deg)
+    brightness(104%) contrast(107%);
+}
+li img {
+  position: absolute;
+  right: -1rem;
+  height: 450%;
+  animation: rotatos linear infinite;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+@keyframes rotatos {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 }
